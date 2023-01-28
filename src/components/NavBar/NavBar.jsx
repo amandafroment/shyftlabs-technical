@@ -5,11 +5,17 @@ import "./NavBar.css";
 export default function NavBar() {
   return (
     <>
-      <nav>
-        <div>
-          <Link to="/">Home</Link>
-          <Link to="/students">Students</Link>
-          <Link to="/courses">Courses</Link>
+      <nav className="NavBar">
+        <div className="NavBarContainer">
+          <Link to="/" className="link">
+            Home
+          </Link>
+          <Link to="/students" className="link">
+            Students
+          </Link>
+          <Link to="/courses" className="link">
+            Courses
+          </Link>
         </div>
       </nav>
     </>
