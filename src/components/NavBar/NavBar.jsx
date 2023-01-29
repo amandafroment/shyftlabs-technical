@@ -16,6 +16,9 @@ export default function NavBar() {
           <Link to="/courses" className="link">
             Courses
           </Link>
+          <Link to="/results" className="link">
+            Results
+          </Link>
         </div>
       </nav>
     </>

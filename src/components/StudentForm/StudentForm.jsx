@@ -58,7 +58,7 @@ export default function StudentForm({ setStudents, students }) {
     <>
       <div className="StudentFormContainer">
         {popup && (
-          <div>
+          <div className="submit-message">
             {submitMsg}
             <button onClick={handleClosePopup}>X</button>
           </div>

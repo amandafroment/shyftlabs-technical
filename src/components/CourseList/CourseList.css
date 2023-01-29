@@ -1,10 +1,14 @@
-.StudentListHeader {
+.CourseListHeader {
   text-align: center;
   margin: 25px;
 }
 
-.StudentListContainer {
+.CourseListContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.CourseListContainer > p {
+  margin: 2.5px;
 }

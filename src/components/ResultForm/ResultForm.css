@@ -1,4 +1,4 @@
-.StudentFormContainer {
+.ResultFormContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,31 +17,31 @@
   margin-left: 10px;
 }
 
-.StudentFormContainer > h1 {
+.ResultFormContainer > h1 {
   padding-top: 25px;
 }
 
-.StudentForm {
+.ResultForm {
   margin-left: 25px;
 }
 
-.StudentForm > label {
+.ResultForm > label {
   margin: 10px;
   color: #33454f;
   font-weight: bold;
 }
 
-.StudentForm > input {
+.ResultForm > input {
   border-radius: 1px;
 }
 
-.StudentForm > button {
+.ResultForm > button {
   margin-left: 10px;
   color: #33454f;
   width: 75px;
 }
 
-.StudentForm > button:hover {
+.ResultForm > button:hover {
   color: #56ccf2;
   border-color: #56ccf2;
   font-weight: bold;
