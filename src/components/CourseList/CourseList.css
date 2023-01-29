@@ -1,0 +1,10 @@
+.StudentListHeader {
+  text-align: center;
+  margin: 25px;
+}
+
+.StudentListContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
