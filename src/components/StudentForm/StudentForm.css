@@ -1,0 +1,32 @@
+.StudentFormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.StudentForm {
+  margin: 25px;
+}
+
+.StudentForm > label {
+  margin: 10px;
+  color: #33454f;
+  font-weight: bold;
+}
+
+.StudentForm > input {
+  border-radius: 1px;
+}
+
+.StudentForm > button {
+  margin-left: 10px;
+  color: #33454f;
+  width: 75px;
+}
+
+.StudentForm > button:hover {
+  color: #56ccf2;
+  border-color: #56ccf2;
+  font-weight: bold;
+  background-color: white;
+}

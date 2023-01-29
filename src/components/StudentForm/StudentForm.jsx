@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import * as studentsAPI from "../../utilities/students-api";
+import "./StudentForm.css";
 
-export default function StudentForm() {
+export default function StudentForm({ setStudents, students }) {
   const [submitMsg, setSubmitMsg] = useState("");
   const [emptyForm, setEmptyForm] = useState({
     firstName: "",
@@ -29,7 +30,8 @@ export default function StudentForm() {
       let student = await studentsAPI.createStudent(formData);
       setFormData(emptyForm);
       handlePopup(true);
-      setSubmitMsg("Congratulations!");
+      setSubmitMsg("A new student has been added below.");
+      setStudents([...students, student]);
     } catch (err) {
       setSubmitMsg("Create Student Failed - Try Again");
     }
@@ -54,15 +56,15 @@ export default function StudentForm() {
 
   return (
     <>
-      <div>
+      <div className="StudentFormContainer">
         {popup && (
           <div>
             {submitMsg}
             <button onClick={handleClosePopup}>X</button>
           </div>
         )}
-
-        <form onSubmit={handleSubmitForm}>
+        <h1>Student Form</h1>
+        <form onSubmit={handleSubmitForm} className="StudentForm">
           <label>First Name</label>
           <input
             type="text"
