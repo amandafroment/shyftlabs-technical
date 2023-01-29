@@ -1,5 +1,6 @@
 import React from "react";
 import "./StudentList.css";
+import dateFormat from "dateformat";
 
 export default function StudentList({ students }) {
   return (
@@ -8,13 +9,11 @@ export default function StudentList({ students }) {
       <div>
         {students.map((student, idx) => {
           return (
-            <>
-              <div className="StudentListContainer">
-                <p>{student.firstName}</p>
-                <p>{student.familyName}</p>
-                <p>{student.birthOfDate}</p>
-              </div>
-            </>
+            <div className="StudentListContainer" key={idx}>
+              <p>{student.firstName}</p>
+              <p>{student.familyName}</p>
+              <p>{dateFormat(student.dateOfBirth, "mmmm dS, yyyy")}</p>
+            </div>
           );
         })}
       </div>

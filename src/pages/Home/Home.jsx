@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <div className="Home">
         <h1>Student Result Management System</h1>
-        <p>Please click on Students to submit your form.</p>
+        <p>Please click on Students or Courses to add the necessary data.</p>
       </div>
     </>
   );

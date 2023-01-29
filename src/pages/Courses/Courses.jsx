@@ -12,6 +12,8 @@ export default function Courses() {
       let getCourses = await coursesAPI.getAllCourses();
       setCourses(getCourses);
     }
+
+    getCourses();
   }, []);
 
   return (

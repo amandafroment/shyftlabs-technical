@@ -12,6 +12,8 @@ export default function Students() {
       let getStudents = await studentsAPI.getAllStudents();
       setStudents(getStudents);
     }
+
+    getStudents();
   }, []);
 
   return (
