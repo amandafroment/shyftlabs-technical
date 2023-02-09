@@ -19,7 +19,9 @@ export default function StudentList({ students }) {
                 <tr>
                   <td>{student.firstName}</td>
                   <td>{student.familyName}</td>
-                  <td>{dateFormat(student.dateOfBirth, "mmmm dS, yyyy")}</td>
+                  <td>
+                    {dateFormat(student.dateOfBirth, "mmmm dS, yyyy", true)}
+                  </td>
                 </tr>
               </>
             );
